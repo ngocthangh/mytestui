@@ -1,0 +1,21 @@
+<div class="ui special cards">
+  <div class="card">
+    <div class="blurring dimmable image">
+      <div class="ui inverted dimmer">
+        <div class="content">
+          <div class="center">
+            <h2 class="ui inverted header">{{item._title}}</h2>
+            <div class="ui primary button">WATCH NOW</div>
+            <h5 style="color: #1c1c1c">{{item._description}}</h5>
+          </div>
+        </div>
+      </div>
+      <img src="{{item.getLink()}}" class="ui medium image">
+    </div>
+    <div class="content" style="background-color: #383636; color: #fff;">
+      <div class="center">
+        {{item._title}}
+      </div>
+    </div>
+  </div>
+</div>

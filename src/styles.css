@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+    
+
+#login {
+    background: #D8D8D8;
+}
+
+#relative {
+    background-color: #1B201D;
+    background-image: url('assets/images/image1.png');
+    width: 100%;
+    height: 100%;
+}
+body {
+    padding: 0em;
+}

@@ -1,0 +1,14 @@
+ 
+/* element.style {
+  color: white;
+  width: 42px !important;
+  height: 42px !important;
+  margin-top: 100px;
+  left: 0px;
+} */
+.ui.fixed.sticky {
+  left: 0px;
+  width: 42px !important; 
+  height: 42px !important; 
+  margin-top: 100px;
+}

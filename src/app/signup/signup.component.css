@@ -1,0 +1,15 @@
+
+#login {
+    position: relative;
+    height: 100%;
+}
+
+.column {
+    max-width: 450px;
+    min-width: 320px;
+}
+
+body {
+  background-image: url("https://www.iflix.com/gfx/index-page/landing-vn.png");
+  background-size: cover;
+}

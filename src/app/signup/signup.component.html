@@ -1,0 +1,79 @@
+<body>
+<div class="ui middle aligned center aligned grid" id="login" style="background-color: transparent">
+  <div class="column" style="background-color: #1D1D21; padding-left: 0px; padding-right: 0px;padding-top: 0px;">
+    <div style="background-color: #df2127; padding: 1rem;">
+        <div class="ui floating labeled icon dropdown button" style="background-color: transparent; color: white; border: 1px solid white;">
+          <i class="world icon"></i>
+          <span class="text">EN</span>
+          <div class="menu">
+            <div class="item">EN</div>
+            <div class="item">FR</div>
+            <div class="item">VI</div>
+            <div class="item">TH</div>
+            <div class="item">BN</div>
+            <div class="item">CN</div>
+          </div>
+        </div>
+    </div>
+    <div class="column" style="padding: 1rem">
+      <h2 class="ui teal image header">
+        <img src="assets/images/fpt_logo.png" class="image">
+        <div class="content" style="color: #fff;">
+          Let's get you all signed up!
+        </div>
+      </h2>
+      <h4 class="content" style="color: #fff;">
+        Continue with
+      </h4>
+      <div class="column">
+        <h2 class="ui header">
+        <div class="content ui button" style="background-color: rgba(73, 132, 239, 1); color: white; width: 45%" (click)="loginByGoogle()">
+          <img src="http://neurogadget.net/wp-content/uploads/2017/09/LI_TRk1z_400x400.jpg" width="20px" height="20px">
+          Google
+        </div>
+        <div class="content ui button" style="background-color: rgba(58, 88, 151, 1); color: white; width: 45%" (click)="loginByFacebook()">
+          <img src="https://www.facebook.com/images/fb_icon_325x325.png" width="20px" height="20px">
+          Facebook
+        </div>
+        </h2>
+      </div>
+      <h2 style="color: #fff">OR</h2>
+
+    <form class="ui large form" id="signupForm">
+      <div class="ui stacked segment" style="background-color: transparent">
+        <div class="field" style="background-color: transparent; padding-bottom: 1rem">
+          <div class="ui transparent input" style="color: #fff">
+            <input name="firstName" placeholder="First name" class="form-control" style="color: #fff;" required>
+          </div>
+        </div>
+
+        <div class="field" style="background-color: transparent; padding-bottom: 1rem">
+          <div class="ui transparent input" style="color: #fff">
+            <input email name="emailAddress" placeholder="Email address" class="form-control" style="color: #fff;" required>
+          </div>
+        </div>
+          <div class="field" style="background-color: transparent;">
+            <div class="ui transparent icon input">
+              <input type="password" name="password" placeholder="Create password" style="color: #fff" required>
+              <i class="lock icon" style="color: #fff"></i>
+            </div>
+          </div>
+        <div style="color: #fff; padding-bottom: 1em;padding-top: 1em;">By signing up, you agree to iflix's <a href="./term">Terms of use & Privacy Policy</a></div>
+          <button class="ui fluid large teal submit button" type="submit" (submit)="redirectToHomePage()" formmethod="post">LOGIN</button>
+        </div>
+      <div class="ui error message"></div>
+    </form>
+
+    <div style="color: #f0f0f0; margin-bottom: 1rem;">
+      Already a member?
+    </div>
+
+    <div class="button" style="color: white; font-style: italic" (click)="redirectToLogin()">Login here</div>
+
+  </div>
+  </div>
+
+
+
+</div>
+</body>

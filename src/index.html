@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MovieUI</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+</head>
+<body >
+  <app-root></app-root>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="assets/semantic/dist/semantic.min.js"></script>
+  <script src="assets/slick/slick.js"></script>
+
+  <!--new import Sang-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $('.card .dimmer')
+      .dimmer({
+        on: 'hover'
+    });
+  });
+  </script>
+</body>
+</html>

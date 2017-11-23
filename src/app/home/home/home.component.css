@@ -1,0 +1,10 @@
+div.relative {
+    position: relative;
+    width:200px;
+    height: 200px;
+    left: 530px;
+    top: 200px;
+}
+body  {
+    background-color: rgb(255, 255, 255);
+}

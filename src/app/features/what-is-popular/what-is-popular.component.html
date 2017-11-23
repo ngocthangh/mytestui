@@ -1,0 +1,148 @@
+<div class="ui container">
+    <h2 class="ui header">
+        <img class="ui medium circular image" src="assets/images/daniel.jpg">
+        <div class="content" style="color: #fff; font-weight: bold;">
+            WHAT IS POPULAR FEATURE
+        </div>
+    </h2>
+    
+    <div class="slide-what-is-popular" *ngIf="myList">
+        <app-movie-item *ngFor="let obj of myList" [item] = "obj"></app-movie-item>
+        <!--div class="ui special cards">
+          <div class="card">
+            <div class="blurring dimmable image">
+              <div class="ui inverted dimmer">
+                <div class="content">
+                  <div class="center">
+                    <h2 class="ui inverted header">{{obj._title}}</h2>
+                    <div class="ui primary button">WATCH NOW</div>
+                    <h5 style="color: #1c1c1c">{{obj._description}}</h5>
+                  </div>
+                </div>
+              </div>
+              <img src="{{obj.getLink()}}" class="ui medium image">
+            </div>
+            <div class="content" style="background-color: #383636; color: #fff;">
+              <div class="center">
+                {{obj._title}}
+              </div>
+            </div>
+          </div>
+        </div-->
+<!--
+      <div class="ui special cards">
+        <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <h2 class="ui inverted header">ATTACK ON TITAN</h2>
+                  <div class="ui primary button">WATCH NOW</div>
+                  <h5 style="color: #1c1c1c">Hundreds of years ago, humanity was nearly exterminated by giant, naked mannequin-esque creatures with a taste for human meat. The remaining survivors built a city within extremely high walls to stay alive and there they were safe for over a hundred years. But out of nowhere, a Colossal Titan emerges again and attacks the city! It is up to Eren, Mikasa, Erwin, Levi, Hanji, Sasha, Armin, and the rest of the squad to keep the city safe and fend off the Titans. Also, will they ever find out what’s in that basement?</h5>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/collaborative/1.jpg" class="ui medium image">
+          </div>
+          <div class="content" style="background-color: #383636; color: #fff;">
+            <div class="center">
+              Attack on Titan
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="ui special cards">
+        <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <h2 class="ui inverted header">AFTERMATH</h2>
+                  <div class="ui primary button">WATCH NOW</div>
+                  <h5 style="color: #1c1c1c">When civilization reaches its apocalyptic end, the Copeland family survives the end of the world as they know it, but what will the new world be like? Turns out it's scary, with supernatural creatures, massive storms and a plague among the things that the Copelands must deal with while facing the rapid decline of the new civilization around them. Patriarch Joshua's study of world cultures comes in handy when he has to help his family survive in the new world as wife Karen, a former Air Force pilot, draws upon her combat skills and survival training to protect her loved ones.</h5>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/last-action/aftermath.jpg" class="ui medium image">
+          </div>
+          <div class="content" style="background-color: #383636; color: #fff;">
+            <div class="center">
+              AFTERMATH
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+      <div class="ui special cards">
+        <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <h2 class="ui inverted header">Katy Perry</h2>
+                  <div class="ui primary button">WATCH NOW</div>
+                  <h5 style="color:#1c1c1c;">Filmmakers Dan Cutforth and Jane Lipsitz follow wildly popular singer Katy Perry during her yearlong California Dreams tour. During 124 sold-out shows in arenas around the world, the constant camera presence creates both a front-row seat and a backstage pass as Perry performs for thousands of fans, then returns to the reality of her everyday life. Interviews with family and friends complete the picture, as Perry gives her all onstage, then faces the pressing personal challenges that await.</h5>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/last-action/katy.jpg" class="ui medium image">
+          </div>
+          <div class="content" style="background-color: #383636; color: #fff;">
+            <div class="center">
+              Katy Perry
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="ui special cards">
+        <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <h2 class="ui inverted header">AFTERMATH</h2>
+                  <div class="ui primary button">WATCH NOW</div>
+                  <h5 style="color: #1c1c1c">When civilization reaches its apocalyptic end, the Copeland family survives the end of the world as they know it, but what will the new world be like? Turns out it's scary, with supernatural creatures, massive storms and a plague among the things that the Copelands must deal with while facing the rapid decline of the new civilization around them. Patriarch Joshua's study of world cultures comes in handy when he has to help his family survive in the new world as wife Karen, a former Air Force pilot, draws upon her combat skills and survival training to protect her loved ones.</h5>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/last-action/aftermath.jpg" class="ui medium image">
+          </div>
+          <div class="content" style="background-color: #383636; color: #fff;">
+            <div class="center">
+              AFTERMATH
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui special cards">
+        <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <h2 class="ui inverted header">AFTERMATH</h2>
+                  <div class="ui primary button">WATCH NOW</div>
+                  <h5 style="color: #1c1c1c">When civilization reaches its apocalyptic end, the Copeland family survives the end of the world as they know it, but what will the new world be like? Turns out it's scary, with supernatural creatures, massive storms and a plague among the things that the Copelands must deal with while facing the rapid decline of the new civilization around them. Patriarch Joshua's study of world cultures comes in handy when he has to help his family survive in the new world as wife Karen, a former Air Force pilot, draws upon her combat skills and survival training to protect her loved ones.</h5>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/last-action/aftermath.jpg" class="ui medium image">
+          </div>
+          <div class="content" style="background-color: #383636; color: #fff;">
+            <div class="center">
+              AFTERMATH
+            </div>
+          </div>
+        </div>
+      </div>
+
+    -->
+  
+    </div>
+</div>

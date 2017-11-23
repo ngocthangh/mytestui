@@ -1,0 +1,28 @@
+<body>
+
+<div *ngIf="!isLogin">
+    <div class="ui top menu inverted" id="home" >
+        <div class="item">
+          <img src="https://semantic-ui.com/images/logo.png" >
+        </div>
+        <a class="item ui right" [routerLink]="['/login']">Sign in</a>
+    </div>
+    <div class="relative">
+      <div>
+          <img src="/src/assets/images/patrick.png" class="ui circular image">
+          <div class="ui section divider">
+              SEE WHAT'S NEXT!
+          </div>
+          <br>
+      </div>
+    
+      <div class="relative1" style="position: relative;">
+        <button class="ui primary large button">JOIN FREE FOR A MONTH</button>
+      </div>
+    </div>
+</div>
+<div *ngIf="isLogin">
+    <app-features></app-features>
+</div>
+
+</body>
