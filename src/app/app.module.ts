@@ -21,6 +21,7 @@ import {SignUpComponent} from './signup/signup.component';
 import { KidComponent } from './kid/kid.component';
 import { ImdbService } from './imdb.service';
 import { MovieItemComponent } from './features/movie-item/movie-item.component';
+import { DetailPageComponent } from './detail-page/detail-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'signup', component: SignUpComponent },
   { path: 'survey', component: SurveyFormComponent },
   { path: 'kid', component: KidComponent },
+  { path: 'detail/:id', component: DetailPageComponent },
 ];
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ const routes: Routes = [
     MainViewComponent,
     SignUpComponent,
     KidComponent,
-    MovieItemComponent
+    MovieItemComponent,
+    DetailPageComponent
   ],
   imports: [
     HttpModule,

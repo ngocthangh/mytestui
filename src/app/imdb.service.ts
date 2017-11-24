@@ -48,4 +48,37 @@ export class ImdbService {
         )
         .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
   }
+
+  getMovieById(id): Observable<MovieItem>{
+    console.log('hello, getting data...' + id);
+    return this.http.get('http://127.0.0.1:8000/movie/'+id+'/')
+        .map((res:Response) => 
+        {
+            // console.log((<any>response.json()))
+            console.log(res.json());
+            //return (res.json());
+            var movie = res.json();
+            return new MovieItem({
+                _index: movie.idx,
+                _title: movie.title,
+                _movieId: movie.movie_id,
+                _genres: movie.genres,
+                _directors: movie.directors,
+                _writers: movie.writers,
+                _description: movie.description,
+                _year: movie.year,
+                _countries: movie.countries,
+                _release: movie.release,
+                _runtime: movie.runtime,
+                _rating: movie.rating,
+                _keywords: movie.keywords,
+                _poster: movie.poster,
+                _slate: movie.slate,
+                _actors: movie.actors
+                
+            });
+        } 
+        )
+        .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }
 }

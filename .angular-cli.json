@@ -21,7 +21,8 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": ["assets/js/myscript.js"],
+      "scripts": [
+        "assets/js/myscript.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
